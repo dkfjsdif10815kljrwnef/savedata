@@ -15,7 +15,7 @@ class ReactiveStateManagePage extends StatelessWidget {
   Widget build(BuildContext context) {
     Get.put(CountControllerWithReactive());
     // obx가 컨트롤러에서 변화를 감지하면 변경됨. 그래서 감지할수있도록 뭔가 넣어줘얗마...
-// 집에.. 기사가와서..ㅠㅠㅠ잠시만 자리비웁니당..
+
     return Scaffold(
         appBar: AppBar(
           title: Text("반응형상태관리"),
@@ -32,6 +32,12 @@ class ReactiveStateManagePage extends StatelessWidget {
               child: Text("+", style: TextStyle(fontSize: 30)),
               onPressed: () {
                 Get.find<CountControllerWithReactive>().increase();
+              },
+            ),
+            RaisedButton(
+              child: Text("-", style: TextStyle(fontSize: 30)),
+              onPressed: () {
+                Get.find<CountControllerWithReactive>().my();
               },
             )
           ],

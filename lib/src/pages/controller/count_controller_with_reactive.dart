@@ -5,4 +5,8 @@ class CountControllerWithReactive {
   void increase() {
     count++;
   }
+
+  void my() {
+    count--;
+  }
 }
