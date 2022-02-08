@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:savedata/src/pages/first.dart';
 import 'package:savedata/src/pages/next.dart';
+import 'package:savedata/src/pages/reactive_state_manage_page.dart';
+import 'package:savedata/src/pages/simple_state_manage_page.dart';
 
 class Home extends StatelessWidget {
   const Home({Key key}) : super(key: key);
@@ -62,6 +64,22 @@ class Home extends StatelessWidget {
               //Navigator.of(context).pushNamed("/first");
               Get.toNamed("/user/28357"); //값을 넘기는 방법
               // Get.to(FirstPage(), arguments: "개남");
+            }),
+        RaisedButton(
+            child: Text("단순상태관리"),
+            onPressed: () {
+              //기존소스
+              //Navigator.of(context).spushNamed("/first");
+              Get.to(SimpleStateManagePage()); //값을 넘기는 방법
+              // Get.to(FirstPage(), arguments: "개남");S
+            }),
+        RaisedButton(
+            child: Text("반응형상태관리"),
+            onPressed: () {
+              //기존소스
+              //Navigator.of(context).spushNamed("/first");
+              Get.to(ReactiveStateManagePage()); //값을 넘기는 방법
+              // Get.to(FirstPage(), arguments: "개남");S
             })
       ])),
     );
