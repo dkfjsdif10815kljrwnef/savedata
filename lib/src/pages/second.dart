@@ -1,7 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
-
+import 'package:savedata/src/route_home.dart';
 import '../home.dart';
 
 class SecondPage extends StatelessWidget {
@@ -32,7 +31,7 @@ class SecondPage extends StatelessWidget {
               onPressed: () {
                 //기본코드
                 Navigator.of(context).pushAndRemoveUntil(
-                    MaterialPageRoute(builder: (_) => Home()),
+                    MaterialPageRoute(builder: (_) => RouteHome()),
                     (route) => false);
                 //Get방식
                 // Get.offAll(Home()); //뒤로가기 기록이 없음
