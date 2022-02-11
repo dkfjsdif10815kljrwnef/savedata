@@ -8,6 +8,7 @@ import 'package:savedata/src/pages/reactive_state_manage_page.dart';
 import 'package:savedata/src/pages/simple_state_manage_page.dart';
 import 'package:savedata/src/textfield_home.dart';
 
+import 'future_home.dart';
 import 'layout_home.dart';
 
 class Home extends StatelessWidget {
@@ -44,7 +45,16 @@ class Home extends StatelessWidget {
               // Navigator.of(context).push(MaterialPageRoute(
               //   builder: (_) => FirstPage(),
               // ));
-              Get.to(ListViewPage());
+              Get.to(LayoutHome());
+            }),
+        RaisedButton(
+            child: Text("FutureHome"),
+            onPressed: () {
+              //기존소스
+              // Navigator.of(context).push(MaterialPageRoute(
+              //   builder: (_) => FirstPage(),
+              // ));
+              Get.to(FutureHome());
             }),
       ])),
     );
