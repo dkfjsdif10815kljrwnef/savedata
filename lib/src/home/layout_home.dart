@@ -2,10 +2,12 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:savedata/src/pages/first.dart';
+import 'package:savedata/src/pages/layout_test.dart';
 import 'package:savedata/src/pages/listview.dart';
 import 'package:savedata/src/pages/next.dart';
 import 'package:savedata/src/pages/reactive_state_manage_page.dart';
 import 'package:savedata/src/pages/simple_state_manage_page.dart';
+import 'package:savedata/src/pages/layout_spacer.dart';
 import 'package:savedata/src/pages/textField.dart';
 import 'package:savedata/src/pages/textField2.dart';
 
@@ -26,6 +28,24 @@ class LayoutHome extends StatelessWidget {
               //   builder: (_) => FirstPage(),
               // ));
               Get.to(ListViewPage());
+            }),
+        RaisedButton(
+            child: Text("Spacer"),
+            onPressed: () {
+              //기존소스
+              // Navigator.of(context).push(MaterialPageRoute(
+              //   builder: (_) => FirstPage(),
+              // ));
+              Get.to(SpacerPage());
+            }),
+        RaisedButton(
+            child: Text("SpacerTest01Page"),
+            onPressed: () {
+              //기존소스
+              // Navigator.of(context).push(MaterialPageRoute(
+              //   builder: (_) => FirstPage(),
+              // ));
+              Get.to(SpacerTest01Page());
             }),
       ])),
     );

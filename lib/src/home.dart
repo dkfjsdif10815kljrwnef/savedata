@@ -6,10 +6,10 @@ import 'package:savedata/src/pages/listview.dart';
 import 'package:savedata/src/pages/next.dart';
 import 'package:savedata/src/pages/reactive_state_manage_page.dart';
 import 'package:savedata/src/pages/simple_state_manage_page.dart';
-import 'package:savedata/src/textfield_home.dart';
-
-import 'future_home.dart';
-import 'layout_home.dart';
+import 'package:savedata/src/home/textfield_home.dart';
+import 'home/format_home.dart';
+import 'home/future_home.dart';
+import 'home/layout_home.dart';
 
 class Home extends StatelessWidget {
   const Home({Key key}) : super(key: key);
@@ -55,6 +55,11 @@ class Home extends StatelessWidget {
               //   builder: (_) => FirstPage(),
               // ));
               Get.to(FutureHome());
+            }),
+        RaisedButton(
+            child: Text("FormatHome"),
+            onPressed: () {
+              Get.to(FormatHome());
             }),
       ])),
     );

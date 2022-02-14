@@ -59,6 +59,11 @@ class MyApp extends StatelessWidget {
               name: "/user/:uid",
               page: () => UserPage(),
               transition: Transition.zoom),
+          GetPage(
+              //url param 전달
+              name: "/user/:uid",
+              page: () => UserPage(),
+              transition: Transition.zoom),
         ]);
   }
 }
