@@ -4,6 +4,7 @@ import 'package:savedata/src/home.dart';
 import 'package:savedata/src/pages/named/first.dart';
 import 'package:savedata/src/pages/named/second.dart';
 import 'package:savedata/src/pages/next.dart';
+import 'package:savedata/src/pages/textfield/my_input_theme.dart';
 import 'package:savedata/src/pages/user.dart';
 
 void main() {
@@ -21,14 +22,9 @@ class MyApp extends StatelessWidget {
         theme: ThemeData(
           primarySwatch: Colors.blue,
           visualDensity: VisualDensity.adaptivePlatformDensity,
+          //inputDecorationTheme: MyInputTheme().theme(), // input박스의 스타일설정을 통일
         ),
-        // home: Home(),
         initialRoute: "/",
-        // routes: {
-        //   "/": (context) => Home(),
-        //   "/first": (context) => FirstNamePage(),
-        //   "/second": (context) => SecondNamePage(),
-        // },
         getPages: [
           GetPage(
               name: "/",

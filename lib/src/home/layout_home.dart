@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:savedata/src/pages/first.dart';
+import 'package:savedata/src/pages/layout_listview2.dart';
 import 'package:savedata/src/pages/layout_test.dart';
 import 'package:savedata/src/pages/listview.dart';
 import 'package:savedata/src/pages/next.dart';
@@ -21,13 +22,22 @@ class LayoutHome extends StatelessWidget {
       body: Center(
           child: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
         RaisedButton(
-            child: Text("ListView"),
+            child: Text("ListView1"),
             onPressed: () {
               //기존소스
               // Navigator.of(context).push(MaterialPageRoute(
               //   builder: (_) => FirstPage(),
               // ));
               Get.to(ListViewPage());
+            }),
+        RaisedButton(
+            child: Text("ListView2"),
+            onPressed: () {
+              //기존소스
+              // Navigator.of(context).push(MaterialPageRoute(
+              //   builder: (_) => FirstPage(),
+              // ));
+              Get.to(ListView2Page());
             }),
         RaisedButton(
             child: Text("Spacer"),

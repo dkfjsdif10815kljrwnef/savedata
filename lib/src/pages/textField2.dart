@@ -36,7 +36,7 @@ class TextFieldPage2 extends StatelessWidget {
                   decoration: InputDecoration(
                     border: OutlineInputBorder(),
                     labelText: 'Hint',
-                  ))
+                  )),
             ])));
   }
 }

@@ -7,6 +7,8 @@ import 'package:savedata/src/pages/reactive_state_manage_page.dart';
 import 'package:savedata/src/pages/simple_state_manage_page.dart';
 import 'package:savedata/src/pages/textField.dart';
 import 'package:savedata/src/pages/textField2.dart';
+import 'package:savedata/src/pages/textFieldInRow.dart';
+import 'package:savedata/src/pages/textFormField.dart';
 
 class TextHome extends StatelessWidget {
   const TextHome({Key key}) : super(key: key);
@@ -34,6 +36,24 @@ class TextHome extends StatelessWidget {
               //   builder: (_) => FirstPage(),
               // ));
               Get.to(TextFieldPage2());
+            }),
+        RaisedButton(
+            child: Text("TextFieldInRowPage"),
+            onPressed: () {
+              //기존소스
+              // Navigator.of(context).push(MaterialPageRoute(
+              //   builder: (_) => FirstPage(),
+              // ));
+              Get.to(TextFieldInRowPage());
+            }),
+        RaisedButton(
+            child: Text("TextFormField"),
+            onPressed: () {
+              //기존소스
+              // Navigator.of(context).push(MaterialPageRoute(
+              //   builder: (_) => FirstPage(),
+              // ));
+              Get.to(TextFormFieldPage());
             }),
       ])),
     );
