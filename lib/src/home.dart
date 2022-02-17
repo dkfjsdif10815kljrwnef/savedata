@@ -7,6 +7,7 @@ import 'package:savedata/src/pages/next.dart';
 import 'package:savedata/src/pages/reactive_state_manage_page.dart';
 import 'package:savedata/src/pages/simple_state_manage_page.dart';
 import 'package:savedata/src/home/textfield_home.dart';
+import 'home/dart_home.dart';
 import 'home/format_home.dart';
 import 'home/future_home.dart';
 import 'home/layout_home.dart';
@@ -60,6 +61,11 @@ class Home extends StatelessWidget {
             child: Text("FormatHome"),
             onPressed: () {
               Get.to(FormatHome());
+            }),
+        RaisedButton(
+            child: Text("다트기본문법"),
+            onPressed: () {
+              Get.to(DartHome());
             }),
       ])),
     );
