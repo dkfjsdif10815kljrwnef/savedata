@@ -37,7 +37,8 @@ dependencies:
   get: ^3.24.0
   provider: ^4.3.3
   datetime_picker_formfield: ^2.0.0
-
+  # Class명 : PlutoGrid . 최신버전이 flutter sdk와 호환이 안되서 낮은 버전으로 함..
+  pluto_grid: ^1.2.0
 
 dev_dependencies:
   flutter_test:

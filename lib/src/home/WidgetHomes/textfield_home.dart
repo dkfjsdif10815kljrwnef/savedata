@@ -10,8 +10,8 @@ import 'package:savedata/src/pages/textField2.dart';
 import 'package:savedata/src/pages/textFieldInRow.dart';
 import 'package:savedata/src/pages/textFormField.dart';
 
-class TextHome extends StatelessWidget {
-  const TextHome({Key key}) : super(key: key);
+class TextFieldHome extends StatelessWidget {
+  const TextFieldHome({Key key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
