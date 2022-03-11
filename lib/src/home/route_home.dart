@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:savedata/src/pages/dependencys/dependency_manage_page.dart';
 import 'package:savedata/src/pages/first.dart';
 import 'package:savedata/src/pages/next.dart';
 import 'package:savedata/src/pages/reactive_state_manage_page.dart';
@@ -79,6 +80,22 @@ class RouteHome extends StatelessWidget {
               //기존소스
               //Navigator.of(context).spushNamed("/first");
               Get.to(ReactiveStateManagePage()); //값을 넘기는 방법
+              // Get.to(FirstPage(), arguments: "개남");S
+            }),
+        RaisedButton(
+            child: Text("의존성주입"),
+            onPressed: () {
+              //기존소스
+              //Navigator.of(context).spushNamed("/first");
+              Get.to(DependencyManagePage()); //값을 넘기는 방법
+              // Get.to(FirstPage(), arguments: "개남");S
+            }),
+        RaisedButton(
+            child: Text("바인딩 관리"),
+            onPressed: () {
+              //기존소스
+              //Navigator.of(context).spushNamed("/first");
+              Get.toNamed('/binding');
               // Get.to(FirstPage(), arguments: "개남");S
             })
       ])),

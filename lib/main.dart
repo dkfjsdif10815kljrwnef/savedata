@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:savedata/src/home.dart';
+import 'package:savedata/src/pages/binding/binding.dart';
+import 'package:savedata/src/pages/controller/count_controller_with_getx.dart';
 import 'package:savedata/src/pages/named/first.dart';
 import 'package:savedata/src/pages/named/second.dart';
 import 'package:savedata/src/pages/next.dart';
@@ -60,6 +62,13 @@ class MyApp extends StatelessWidget {
               name: "/user/:uid",
               page: () => UserPage(),
               transition: Transition.zoom),
+          GetPage(
+              //url param 전달
+              name: "/binding",
+              page: () => BindingPageBinding(),
+              binding: BindingsBuilder(() {
+                Get.put(CountControllerWithGetX());
+              })), //page를 세팅할때 binding가능
         ]);
   }
 }

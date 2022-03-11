@@ -22,6 +22,8 @@ import 'package:savedata/src/pages/simple_state_manage_page.dart';
 import 'package:savedata/src/pages/textField.dart';
 import 'package:savedata/src/pages/textField2.dart';
 
+import 'WidgetHomes/dialog_home.dart';
+
 Widget getBtn({String title, var method}) {
   return Container(
     padding: EdgeInsets.all(10),
@@ -38,7 +40,10 @@ class WidgetHome extends StatelessWidget {
 
   Widget getLeftRows() {
     return Column(
-      children: [getBtn(title: 'TextField', method: TextFieldHome())],
+      children: [
+        getBtn(title: 'TextField', method: TextFieldHome()),
+        getBtn(title: 'DialogHome', method: DialogHome()),
+      ],
     );
   }
 
